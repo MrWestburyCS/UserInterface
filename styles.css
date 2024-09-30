@@ -1,0 +1,349 @@
+/* Global Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Removed 'justify-content: center;' to allow content to scroll */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* First Name Section */
+  .first-name-container {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .first-name-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    width: 100%;
+  }
+  
+  #first-name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Button */
+  #dropdown-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #dropdown-btn:focus {
+    outline: none;
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-top: none;
+    z-index: 1;
+  }
+  
+  .dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .dropdown-content .dropdown-item:hover,
+  .dropdown-content .dropdown-item:focus {
+    background-color: #ddd;
+  }
+  
+  /* Surname Section */
+.surname-container {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .surname-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .surname-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox-item label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .checkbox-item label:hover,
+  .checkbox-item label:focus {
+    background-color: #ddd;
+  }
+  
+  .checkbox-item input[type="checkbox"]:checked + label {
+    background-color: #bbb;
+    transform: scale(0.95);
+  }
+  
+  /* Surname Input Field */
+  #surname {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  /* New Rotary Phone Styles */
+  #retrophone {
+    width: 600PX;      /* Adjust as needed */
+    height: 600px;     /* Adjust as needed */
+    border: 2px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Rotary Dial Section */
+  .dial-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  
+  .dial {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0 0 10px #000;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .number {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .number:hover {
+    background-color: #ddd;
+  }
+  
+  .number:active {
+    transform: scale(0.95);
+  }
+  
+  /* Position numbers around the dial */
+  .number[data-number="1"] { top: 20%; left: 50%; transform: translate(-50%, -50%); }
+  .number[data-number="2"] { top: 30%; left: 70%; transform: translate(-50%, -50%); }
+  .number[data-number="3"] { top: 50%; left: 80%; transform: translate(-50%, -50%); }
+  .number[data-number="4"] { top: 70%; left: 70%; transform: translate(-50%, -50%); }
+  .number[data-number="5"] { top: 80%; left: 50%; transform: translate(-50%, -50%); }
+  .number[data-number="6"] { top: 70%; left: 30%; transform: translate(-50%, -50%); }
+  .number[data-number="7"] { top: 50%; left: 20%; transform: translate(-50%, -50%); }
+  .number[data-number="8"] { top: 30%; left: 30%; transform: translate(-50%, -50%); }
+  .number[data-number="9"] { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .number[data-number="0"] { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  
+  /* Input and Button Styling */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #phone-number {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #submit-btn:hover {
+    background-color: #555;
+  }
+
+  /* Date of Birth Section */
+.dob-container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dob-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .sliders {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Adjust gap as needed */
+    margin-top: 20px;
+  }
+  
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    width: 30px;  /* Thickness of the slider */
+    height: 200px; /* Length of the slider */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vertical-slider {
+    -webkit-appearance: none;
+    width: 200px;  /* Length of the slider */
+    height: 30px;  /* Thickness of the slider */
+    background: #000; /* Black slider bar */
+    border-radius: 5px;
+    outline: none;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    position: relative;
+    margin: 0;
+  }
+  
+  /* Slider Thumb Styles */
+  .vertical-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 50%;
+  }
+  
+  .vertical-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 50%;
+  }
+  
+  .slider-container label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .slider-container input[type="text"] {
+    margin-top: 5px;
+    width: 60px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+
+
+  /* Lock Button Styles */
+.lock-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #eee;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .lock-button:hover {
+    background-color: #ddd;
+  }
+  
+  .lock-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }

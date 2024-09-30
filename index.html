@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprehensive Input Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- First Name Section -->
+  <div class="first-name-container">
+    <label for="first-name">First Name:</label>
+    <div class="dropdown">
+      <input type="text" id="first-name" placeholder="Enter your first name" readonly>
+      <button id="dropdown-btn" aria-haspopup="true" aria-expanded="false">Select Letter ▼</button>
+      <div id="dropdown-menu" class="dropdown-content" role="menu">
+        <!-- Letters A-Z -->
+        <div class="dropdown-item" role="menuitem" tabindex="0">A</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">B</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">C</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">D</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">E</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">F</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">G</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">H</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">I</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">J</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">K</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">L</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">M</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">N</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">O</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">P</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">Q</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">R</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">S</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">T</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">U</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">V</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">W</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">X</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">Y</div>
+        <div class="dropdown-item" role="menuitem" tabindex="0">Z</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Surname Section -->
+  <div class="surname-container">
+    <label for="surname">Surname:</label>
+    <div class="surname-grid">
+      <!-- Letters A-Z as radio buttons -->
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-A" name="surname-letter" value="A">
+        <label for="letter-A">A</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-B" name="surname-letter" value="B">
+        <label for="letter-B">B</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-C" name="surname-letter" value="C">
+        <label for="letter-C">C</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-D" name="surname-letter" value="D">
+        <label for="letter-D">D</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-E" name="surname-letter" value="E">
+        <label for="letter-E">E</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-F" name="surname-letter" value="F">
+        <label for="letter-F">F</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-G" name="surname-letter" value="G">
+        <label for="letter-G">G</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-H" name="surname-letter" value="H">
+        <label for="letter-H">H</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-I" name="surname-letter" value="I">
+        <label for="letter-I">I</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-J" name="surname-letter" value="J">
+        <label for="letter-J">J</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-K" name="surname-letter" value="K">
+        <label for="letter-K">K</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-L" name="surname-letter" value="L">
+        <label for="letter-L">L</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-M" name="surname-letter" value="M">
+        <label for="letter-M">M</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-N" name="surname-letter" value="N">
+        <label for="letter-N">N</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-O" name="surname-letter" value="O">
+        <label for="letter-O">O</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-P" name="surname-letter" value="P">
+        <label for="letter-P">P</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-Q" name="surname-letter" value="Q">
+        <label for="letter-Q">Q</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-R" name="surname-letter" value="R">
+        <label for="letter-R">R</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-S" name="surname-letter" value="S">
+        <label for="letter-S">S</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-T" name="surname-letter" value="T">
+        <label for="letter-T">T</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-U" name="surname-letter" value="U">
+        <label for="letter-U">U</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-V" name="surname-letter" value="V">
+        <label for="letter-V">V</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-W" name="surname-letter" value="W">
+        <label for="letter-W">W</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-X" name="surname-letter" value="X">
+        <label for="letter-X">X</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-Y" name="surname-letter" value="Y">
+        <label for="letter-Y">Y</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="letter-Z" name="surname-letter" value="Z">
+        <label for="letter-Z">Z</label>
+      </div>
+    </div>
+    <input type="text" id="surname" placeholder="Enter your surname" readonly>
+  </div>
+
+  <!-- Rotary Dial Section -->
+<!-- New Rotary Phone Section -->
+<canvas id="retrophone"></canvas>
+
+  <!-- Phone Number and Submit Button -->
+  <div class="input-container">
+    <input type="text" id="phone-number" placeholder="Enter your phone number" readonly>
+    <button id="submit-btn">Submit</button>
+  </div>
+
+  <!-- Date of Birth Section -->
+<!-- Date of Birth Section -->
+<div class="dob-container">
+  <label for="dob">Date of Birth:</label>
+  <div class="sliders">
+    <!-- Day Slider -->
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <input type="range" min="1" max="31" value="1" id="day-slider" class="vertical-slider">
+      </div>
+      <label for="day-slider">Day</label>
+      <input type="text" id="day-value" value="1" readonly>
+      <button class="lock-button" id="day-lock">Lock</button>
+    </div>
+    <!-- Month Slider -->
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <input type="range" min="1" max="12" value="1" id="month-slider" class="vertical-slider">
+      </div>
+      <label for="month-slider">Month</label>
+      <input type="text" id="month-value" value="1" readonly>
+      <button class="lock-button" id="month-lock">Lock</button>
+    </div>
+    <!-- Year Slider -->
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <input type="range" min="1900" max="2023" value="1900" id="year-slider" class="vertical-slider">
+      </div>
+      <label for="year-slider">Year</label>
+      <input type="text" id="year-value" value="1900" readonly>
+      <button class="lock-button" id="year-lock">Lock</button>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
